@@ -19,4 +19,4 @@ curl -X POST localhost:8080/train -H 'Content-Type: application/json' -d '{}'
 curl -X POST localhost:8080/predict -H 'Content-Type: application/json' -d '{"country":"all","year":2019,"month":6,"day":15}'
 python scripts/simulate_and_monitor.py --start 2019-01-01 --end 2019-06-30 --country all
 ```
-Put the case-study JSON files in `data/cs-train/`. Retraining = call `/train` (reads every file in the dir), e.g. via cron.
+
